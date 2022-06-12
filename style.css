@@ -1,0 +1,21 @@
+@font-face {
+    font-family: ac;
+    src: url(./assets/font/ac.ttf);
+}
+
+.header p {
+    text-align: center;
+    font-family: ac;
+    font-size: 5vh;
+}
+.data {
+    text-align: center;
+}
+
+input {
+    border-style: hidden;
+}
+
+textarea {
+    border-style: hidden;
+}
