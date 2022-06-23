@@ -17,8 +17,21 @@
 </div>
     <div class="mainbody">
         <div class="left">
-            <p style="text-align: center;">Your New Identity</p>
-            <p>&nbsp;Hey</p>
+            <p class="left-title">Your New Identity</p>
+            <p>- Full Name -</p>
+            <p class="dataSet"><?php echo "Michal Mroz";?></p>
+            <p>- Street Address -</p>
+            <p class="dataSet"><?php echo "512 Shoreline Way";?></p>
+            <p>- Dath of Birth -</p>
+            <p class="dataSet"><?php echo "24/12/1995";?></p>
+            <p>- Mother's maiden name -</p>
+            <p class="dataSet"><?php echo "Wilkins";?></p>
+            <p>- PESEL -</p>
+            <p class="dataSet"><?php echo "95122480568";?></p>
+            <p>- Phone Number -</p>
+            <p class="dataSet"><?php echo "+48123456789";?></p>
+            <p>- Email Address -</p>
+            <p class="dataSet"><?php echo "mike@mroz.com";?></p>
         </div>
         <div class="right">
             <p>Here is where you receive emails and sms texts.</p>
