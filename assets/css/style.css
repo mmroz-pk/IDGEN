@@ -1,0 +1,73 @@
+@font-face {
+    font-family: ac;
+    src: url(../fonts/ac.ttf);
+}
+
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-color: #f1faee;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e63946;
+    height: 9vh;
+    border-style: solid;
+}
+
+.homebutton a{
+    user-select: none;
+    text-decoration: none;
+    font-family: ac;
+    color: #f1faee;
+    font-size:5vh;
+}
+
+.homebutton a:hover{
+    color: #000000;
+}
+
+
+.mainbody {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.left {
+    background-color: #457b9d;
+    width: 50%;
+    border-left-style: solid;
+}
+.right {
+    background-color: #457b9d;
+    width: 50%;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.downright {
+    display: flex;
+    background-color: #457b9d;
+    margin-top: 32.7vh;
+    height: 40vh;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: ac;
+    font-size: 25px;
+    color: #f1faee;
+    background-color: #1d3557;
+    border-style: solid;
+    border-color: black;
+    height: 9vh;
+}
