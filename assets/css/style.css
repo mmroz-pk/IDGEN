@@ -62,12 +62,23 @@ body {
     border-right-style: solid;
 }
 
+.right-title {
+    font-family: ac;
+    font-size: 25px;
+}
+
 .downright {
     display: flex;
     background-color: #457b9d;
     margin-top: 32.7vh;
     height: 40vh;
     border-top-style: solid;
+    text-align: center;
+}
+
+.downright-title {
+    font-family: ac;
+    font-size: 25px;
 }
 
 .footer {
