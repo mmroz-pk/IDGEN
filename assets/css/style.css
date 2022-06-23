@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    height: 100%;
+    display: grid;
     background-color: #f1faee;
 }
 .header {
@@ -40,10 +40,21 @@ body {
 }
 
 .left {
+    text-align: center;
     background-color: #457b9d;
     width: 50%;
     border-left-style: solid;
 }
+
+.left-title {
+    font-family: ac;
+    font-size: 25px;
+}
+
+.dataSet {
+    color: white;
+}
+
 .right {
     background-color: #457b9d;
     width: 50%;
@@ -57,7 +68,6 @@ body {
     margin-top: 32.7vh;
     height: 40vh;
     border-top-style: solid;
-    border-bottom-style: solid;
 }
 
 .footer {
