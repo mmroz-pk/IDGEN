@@ -34,10 +34,9 @@
             <p class="dataSet"><?php echo "mike@mroz.com";?></p>
         </div>
         <div class="right">
-            <p>Here is where you receive emails and sms texts.</p>
-            <p>Here is where you receive emails and sms texts.</p>
+            <p class="right-title">&nbsp;Here is where you receive emails</p>
                 <div class="downright">
-                    <p>Yo.</p>
+                    <p class="downright-title">&nbsp;Here is where you receive sms texts</p>
                 </div>
         </div>
     </div>
