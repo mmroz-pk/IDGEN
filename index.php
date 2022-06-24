@@ -32,7 +32,7 @@ include("./php/database.php");
             <p>- National ID (PESEL/SSN) -</p>
             <p class="dataSet"><?php echo $pesel; ?></p>
             <p>- Phone Number -</p>
-            <p class="dataSet"><?php echo $phone; ?></p>
+            <p class="dataSet"><?php if($country == "Poland"){echo "+48 $phone";}elseif($country == "United States"){echo "+1 $phone";} ?></p>
             <p>- Email Address -</p>
             <p class="dataSet"><?php echo $email; ?></p>
         </div>
