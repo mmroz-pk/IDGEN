@@ -1,0 +1,115 @@
+@font-face {
+    font-family: ac;
+    src: url(../fonts/ac.ttf);
+}
+
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    background-color: #f1faee;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e63946;
+    height: 9vh;
+    border-style: solid;
+}
+
+.homebutton a{
+    user-select: none;
+    text-decoration: none;
+    font-family: ac;
+    color: #f1faee;
+    font-size:5vh;
+}
+
+.homebutton a:hover{
+    color: #000000;
+}
+
+
+.mainbody {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.form {
+    text-align: center;
+    background-color: #457b9d;
+    width: 100%;
+    border-left-style: solid;
+}
+
+.form-title {
+    font-family: ac;
+    font-size: 25px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 1vh;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.right {
+    background-color: #457b9d;
+    width: 50%;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.right-title {
+    font-family: ac;
+    font-size: 25px;
+}
+
+.downright {
+    display: flex;
+    background-color: #457b9d;
+    margin-top: 32.7vh;
+    height: 40vh;
+    border-top-style: solid;
+    text-align: center;
+}
+
+.downright-title {
+    font-family: ac;
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: ac;
+    font-size: 25px;
+    color: #f1faee;
+    background-color: #1d3557;
+    border-style: solid;
+    border-color: black;
+    height: 9vh;
+}
