@@ -1,3 +1,6 @@
+<?php
+include("./php/database.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,19 +22,19 @@
         <div class="left">
             <p class="left-title">Your New Identity</p>
             <p>- Full Name -</p>
-            <p class="dataSet"><?php echo "Michal Mroz";?></p>
+            <p class="dataSet"><?php echo $name; ?></p>
             <p>- Street Address -</p>
-            <p class="dataSet"><?php echo "512 Shoreline Way";?></p>
+            <p class="dataSet"><?php if($country == "Poland"){echo "$address<br>$zip $city<br>$country";}elseif($country == "United States"){echo "$address<br>$city, $state $zip<br>$country";} ?></p>
             <p>- Dath of Birth -</p>
-            <p class="dataSet"><?php echo "24/12/1995";?></p>
+            <p class="dataSet"><?php echo $dob; ?></p>
             <p>- Mother's maiden name -</p>
-            <p class="dataSet"><?php echo "Wilkins";?></p>
-            <p>- PESEL -</p>
-            <p class="dataSet"><?php echo "95122480568";?></p>
+            <p class="dataSet"><?php echo $maiden; ?></p>
+            <p>- National ID (PESEL/SSN) -</p>
+            <p class="dataSet"><?php echo $pesel; ?></p>
             <p>- Phone Number -</p>
-            <p class="dataSet"><?php echo "+48123456789";?></p>
+            <p class="dataSet"><?php echo $phone; ?></p>
             <p>- Email Address -</p>
-            <p class="dataSet"><?php echo "mike@mroz.com";?></p>
+            <p class="dataSet"><?php echo $email; ?></p>
         </div>
         <div class="right">
             <p class="right-title">&nbsp;Here is where you receive emails</p>
