@@ -44,6 +44,7 @@ body {
     background-color: #457b9d;
     width: 50%;
     border-left-style: solid;
+    border-right-style: solid;
 }
 
 .left-title {
@@ -58,13 +59,15 @@ body {
 .right {
     background-color: #457b9d;
     width: 50%;
-    border-left-style: solid;
     border-right-style: solid;
+    border-right-color: black;
+    color:white;
 }
 
 .right-title {
     font-family: ac;
     font-size: 25px;
+    color: black;
 }
 
 .downright {
