@@ -29,10 +29,13 @@ $mailbox = new MailBox($connection);
 $messages = $mailbox->getMessages($search);
 
 foreach ($messages as $message) {
-    echo "From: " . $message->header()->get('from');
-    echo "| ";
-    echo "Subject: " . $message->header()->get('subject');
+    $imap_from = "From: " . $message->header()->get('from');
+    echo imap_utf8($imap_from) . "| ";
+    $imap_subject = "Subject: " . $message->header()->get('subject');
+    echo imap_utf8($imap_subject);
     echo "<br>";
-    echo $message->body()->getMessage();
+    $imap_message = $message->body()->getMessage();
+    echo imap_utf8($imap_message);
+    echo "---<br>";
 }
 ?>
