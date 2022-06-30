@@ -10,18 +10,18 @@
 </head>
 <body>
 <div class="header">
-    <p class="homebutton"><a href="./index.php">idGEN</a></p>
+    <p class="homebutton"><a href="../index.php">idGEN</a></p>
 </div>
 <div class="mainbody">
     <div class="form">
-        <form action="./index.php" method="POST" enctype="application/x-www-form-urlencoded">
+        <form action="./panel.php" method="POST" enctype="application/x-www-form-urlencoded">
             <p class="form-title">Login</p>
             <p>- Username -</p>
             <p class="dataSet"><input type="text" name="username" value=""></p>
             <p>- Password -</p>
             <p class="dataSet"><input type="password" name="password" value=""></p>
-            <p><button class="button btn" type="submit" name="username">Login</button>
-                <button class="button btn" type="submit" name="username">Register</button></p>
+            <p><button class="button btn" type="submit" name="type" value="login">Login</button>
+                <button class="button btn" type="submit" name="type" value="register">Register</button></p>
         </form>
     </div>
 </div>
