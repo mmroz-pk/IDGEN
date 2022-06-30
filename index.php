@@ -15,7 +15,7 @@ include("connect_imap.php");
 </head>
 <body>
 <div class="header">
-    <p class="homebutton"><a href="./index.php">idGEN</a></p>
+    <p class="homebutton"><a href="#">idGEN</a></p>
     <p class="homebutton"><a href="./index.php">Generate ID</a></p>
     <p class="homebutton" style="display: none;"><a href="./index.php">Register</a></p>
     <p class="homebutton" style="display: none;"><a href="./index.php">Login</a></p>
