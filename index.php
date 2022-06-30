@@ -1,5 +1,6 @@
 <?php
-include("./php/database.php");
+include("php/database.php");
+include("php/connect_imap.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,14 +10,15 @@ include("./php/database.php");
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>idGen</title>
 </head>
 <body>
 <div class="header">
     <p class="homebutton"><a href="./index.php">idGEN</a></p>
     <p class="homebutton"><a href="./index.php">Generate ID</a></p>
-    <p class="homebutton"><a href="./index.php">Register</a></p>
-    <p class="homebutton"><a href="./index.php">Login</a></p>
+    <p class="homebutton" style="display: none;"><a href="./index.php">Register</a></p>
+    <p class="homebutton" style="display: none;"><a href="./index.php">Login</a></p>
 </div>
     <div class="mainbody">
         <div class="left">
@@ -36,15 +38,37 @@ include("./php/database.php");
             <p>- Email Address -</p>
             <p class="dataSet"><?php echo $email; ?></p>
         </div>
-        <div class="right">
+        <div class="right" id="right">
             <p class="right-title">&nbsp;Here is where you receive emails</p>
-                <div class="downright">
-                    <p class="downright-title">&nbsp;Here is where you receive sms texts</p>
-                </div>
+        <p class="email">
+	<?php
+	#Search specific email
+	use Clivern\Imap\Core\Search;
+	use Clivern\Imap\Core\Search\Condition\To;
+	use Clivern\Imap\MailBox;
+
+	
+	$search = new Search();
+	$search->addCondition(new To("$name@shizzap.biz"));
+
+	$mailbox = new MailBox($connection);
+
+	$messages = $mailbox->getMessages($search);
+
+	foreach ($messages as $message) {
+    	echo "From: " . $message->header()->get('from');
+    	echo "| ";
+    	echo "Subject: " . $message->header()->get('subject');
+    	echo "<br>";
+    	echo $message->body()->getMessage();
+	}
+	?>
+	</p>
         </div>
     </div>
 <div class="footer">
     <p>2022 - idGEN - School Project</p>
 </div>
-</body>
+
+</script></body>
 </html>
