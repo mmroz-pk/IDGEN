@@ -1,6 +1,6 @@
 <?php
 include("php/database.php");
-include("php/connect_imap.php");
+include("connect_imap.php");
 ?>
 <!doctype html>
 <html lang="en">
