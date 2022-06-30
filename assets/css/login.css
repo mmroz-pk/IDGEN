@@ -9,15 +9,21 @@ html {
 }
 
 body {
-    display: grid;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #f1faee;
 }
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     background-color: #e63946;
     height: 9vh;
     border-style: solid;
+    width: 25%;
 }
 
 .homebutton a{
@@ -35,8 +41,9 @@ body {
 
 .mainbody {
     display: flex;
-    justify-content: space-around;
-    height: 80vh;
+    justify-content: center;
+    height: 35vh;
+    width: 25%;
 }
 
 .form {
@@ -44,6 +51,8 @@ body {
     background-color: #457b9d;
     width: 100%;
     border-left-style: solid;
+    border-right-style: solid;
+    border-right-color: black;
 }
 
 .form-title {
@@ -76,31 +85,6 @@ body {
     color: white;
 }
 
-.right {
-    background-color: #457b9d;
-    width: 50%;
-    border-left-style: solid;
-    border-right-style: solid;
-}
-
-.right-title {
-    font-family: ac;
-    font-size: 25px;
-}
-
-.downright {
-    display: flex;
-    background-color: #457b9d;
-    margin-top: 32.7vh;
-    height: 40vh;
-    border-top-style: solid;
-    text-align: center;
-}
-
-.downright-title {
-    font-family: ac;
-    font-size: 25px;
-}
 
 .footer {
     display: flex;
@@ -112,4 +96,13 @@ body {
     border-style: solid;
     border-color: black;
     height: 9vh;
+    width: 25%;
+}
+
+@media only screen and (max-width: 480px) {
+    .header, .mainbody, .form, .footer {
+        width: 100%;
+        height: 100%;
+    }
+
 }
